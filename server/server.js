@@ -1,11 +1,10 @@
-<<<<<<< HEAD
+
 var Express = require("express");
 var bodyParser = require("body-parser");
-=======
+
 var express = require('express');
 var bodyParser = require('body-parser');
 var {ObjectID} = require('mongodb');
->>>>>>> agrgar validaciones por rutas /get y /post
 
 var {mongoose} = require("./db/mongoose");
 var {Todo} = require("./modelos/todo");
@@ -28,10 +27,9 @@ app.post("/todos",(req,res)=>{
   });
 })
 
-<<<<<<< HEAD
 app.listen(3000,()=>{
   console.log("Conexion establecida");
-=======
+
 app.get('/todos/:id', (req, res) => {
   var id = req.params.id;
 
@@ -52,5 +50,5 @@ app.get('/todos/:id', (req, res) => {
 
 app.listen(3000, () => {
   console.log('Started on port 3000');
->>>>>>> agrgar validaciones por rutas /get y /post
+
 });
